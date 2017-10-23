@@ -1,0 +1,31 @@
+{
+    "title": "What is your favorite JavaScript framework?",
+    "voted": false,
+    "total_votes": 234,
+    "mulltiple": false,
+    "answers": [{
+            "value": "answer_1",
+            "name": "Angular",
+            "voted": false,
+            "votes": 103
+        },
+        {
+            "value": "answer_2",
+            "name": "React",
+            "voted": false,
+            "votes": 54
+        },
+        {
+            "value": "answer_3",
+            "name": "Meteor",
+            "voted": false,
+            "votes": 48
+        },
+        {
+            "value": "answer_4",
+            "name": "Ember",
+            "voted": false,
+            "votes": 29
+        }
+    ]
+}

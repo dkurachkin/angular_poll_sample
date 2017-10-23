@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html ng-app="pollApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS Poll Module</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app/bootstrap.min.css">
+    <link rel="stylesheet" href="app/app.css">
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular-resource.min.js"></script>
+    <script src="app/lib/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/questions/questionsModule.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <section class="question-container">
+            <div ng-controller="QuestionsCtrl" data-poll-id="javascript">
+                <question-list></question-list>
+            </div>
+        </section>
+        <section class="question-container">
+            <div ng-controller="QuestionsCtrl" data-poll-id="sport">
+                <question-list></question-list>
+            </div>
+        </section>
+        <section class="question-container">
+            <div ng-controller="QuestionsCtrl" data-poll-id="lunch">
+                <question-list></question-list>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

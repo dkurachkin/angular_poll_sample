@@ -1,0 +1,29 @@
+<div class="poll-example">
+    <h5 class="poll-example_question">{{question.title}}</h5>
+    <div ng-if="!question.voted">
+        <div class="form-check" ng-repeat="answer in question.answers">
+            <label class="form-check-label">
+                <input class="form-check-input"
+                    name="selectedAnswers[]"
+                    ng-checked="selection.indexOf(answer.value) > -1"
+                    ng-click="toggleSelection(answer.value)"
+                    type="{{question.mulltiple ? 'checkbox' : 'radio'}}" value="{{answer.value}}">
+                {{answer.name}}
+            </label>
+        </div>
+        <div class="poll-example_btn-block">
+            <button ng-disabled="!selection.length" ng-click="sendVote()" type="button" class="btn btn-secondary btn-sm poll-example_btn">Vote</button>
+        </div>
+    </div>
+    <div ng-if="question.voted">
+        <div {#userName=} ng-repeat="answer in question.answers" ng-init="calcValue=calcAnswer(answer.value)" class="poll-example_answer" ng-class="{'poll-example_answer-voted': answer.voted === true}">
+            <div class="poll-example_answer-name">{{answer.name}} <span class="float-right">{{calcValue}}%</span></div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: {{calcValue}}%" aria-valuenow="{{calcValue}}" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="poll-example_total-votes">
+            Total votes: {{question.total_votes}} <span ng-if="question.voters" class="float-right">Voters: {{question.voters}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+.question-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.poll-example {
+    position: relative;
+    margin: 0;
+    border-width: .2rem;
+    padding: 1rem;
+    border: solid #f7f7f9;
+    border-radius: 4px;
+}
+
+.poll-example_btn-block {
+    text-align: right;
+}
+
+.poll-example_btn {
+    width: 80px;
+}
+
+.poll-example_answer {
+    padding: 0 0 8px;
+}
+
+.poll-example_answer-voted {
+    margin: 4px -8px;
+    padding: 4px 8px 8px;
+    border-radius: 4px;
+    background: #d5d6e2
+}
+
+.poll-example_total-votes {
+    padding: 6px 0 2px;
+}

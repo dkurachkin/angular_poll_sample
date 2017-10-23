@@ -1,0 +1,31 @@
+{
+    "title": "What do you usually have for lunch?",
+    "voted": true,
+    "total_votes": 234,
+    "mulltiple": false,
+    "answers": [{
+            "value": "answer_11",
+            "name": "Burger and fries with a cola",
+            "voted": false,
+            "votes": 103
+        },
+        {
+            "value": "answer_22",
+            "name": "Anything with meat in it",
+            "voted": true,
+            "votes": 54
+        },
+        {
+            "value": "answer_33",
+            "name": "Soup",
+            "voted": false,
+            "votes": 48
+        },
+        {
+            "value": "answer_44",
+            "name": "A salad",
+            "voted": false,
+            "votes": 29
+        }
+    ]
+}
